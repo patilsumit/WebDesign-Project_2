@@ -1,0 +1,364 @@
+html,body
+{
+    margin:0;
+    padding: 0;
+    width:100%;  
+}
+body
+{
+    width:100%;
+    height:100vh;  
+    background:url(architecture-buildings-city-313782.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:table;
+    font-family:'Times New Roman', Times, serif;
+}
+.nav
+{
+    position: fixed;
+    left:0;
+    top:0;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:80px;
+    border-bottom: 1px solid rgba(255,255,255,0.8);      
+}
+.logo
+{
+    letter-spacing:1px; 
+    float: left;
+    color: #fff;
+    font-size:20px; 
+    line-height:80px;
+    padding: 0 6em; 
+}
+.menu
+{
+    float: right;
+    line-height:50px; 
+    margin:0 6em; 
+}
+.menu ul
+{
+    list-style-type: none;
+}
+.menu ul li
+{
+    display: inline-block;
+    text-transform:capitalize;
+}
+.menu ul li a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight: lighter;
+    padding:0 20px;  
+}
+.menu ul li a:hover
+{
+    color: #009f8b;
+    border:1px solid;
+    padding:10px 20px;   
+}
+.header
+{
+   display:grid;
+   grid-template-columns: 50% 50%;
+   /* border:1px solid red;  */
+   position: absolute; 
+   column-gap:15em; 
+   top:20%;
+   left:10%; 
+}
+.headtext
+{
+    width:450px; 
+}
+.headtext>p
+{
+    color:white;
+    font-size:1.5em; 
+    font-weight:lighter; 
+}
+.headtext>p+p
+{
+    color:white;
+    font-weight:bolder;
+    font-size:3em;
+    line-height:0em;  
+}
+.headtext>p+p+p
+{
+    color:white; 
+    font-size:1.5em; 
+    font-weight:lighter;
+}
+.headtext>p+p+p+p
+{
+    color:white; 
+    font-size:1em;
+    line-height: 1;
+    margin-top: 3em; 
+    font-weight:lighter; 
+}
+.headtext>.button1
+{
+   border:2px solid #009f8b;
+   width:180px;
+   height:60px;   
+   border-radius:4px; 
+   float:left; 
+   transition: 0.5s;
+}
+.headtext>.button1:hover
+{
+  background-color:#009f8b;
+  /* opacity:0.5; */
+  color:white;
+  border-radius:4px;   
+}
+.headtext>.button2
+{
+    border:2px solid #009f8b;
+   width:185px;
+   height:60px;   
+   float: left;
+   margin-left:15px; 
+   border-radius:4px;
+   transition: 0.5s;
+}
+.headtext>.button2:hover
+{
+    background-color:#009f8b;
+    border-radius:4px;
+    color:white;   
+}
+.headreg
+{
+    /* border:1px solid blue;  */
+    width:350px;
+    color:white;
+}
+.regform
+{
+    width:340px;
+    border:1px solid yellow;
+    height:300px;   
+    background-color:rgba(255,255,255,0.8);
+}
+.biticon
+{
+    width:100%;
+    height:35vh;
+    
+    position:absolute;
+    top:130vh;       
+    
+}
+.gridicon
+{
+    display:grid;
+    width:80%;
+    grid-template-columns:1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;  
+    margin-left: 170px;
+    margin-top:20px; 
+}
+.gridicon>div>p
+{
+    text-align: center;
+    font-weight: 550;
+    transition: 0.5s;
+    border-radius:5px;     
+}
+.biticon>.gridicon>div>p:hover
+{
+  background-color: #009f8b;
+  color:white; 
+}
+.about
+{
+    width:100%;
+    height:90vh;  
+    
+    position: absolute;
+    top:165vh;
+}
+.aboutgrid
+{
+    display:grid;
+    grid-template-columns:50% 50%;
+    width:84%;
+    /* border:1px solid black; */
+    height:150px;
+    
+    grid-column-gap:30px;
+    margin-left: 7em;      
+}
+.choose
+{
+    width:100%;
+    height:115vh;
+    
+    position: absolute;
+    top:255vh;
+   background-color: rgba(175,238,238,0.5);
+}
+.choosegrid
+{
+    display:grid;
+    width: 90%;
+    grid-template-columns:2fr 2fr 2fr 2fr;
+       
+    margin-left: 80px;
+    text-align: center;
+}
+.choosegrid>div>img
+{
+    background-color: #009f8b;
+    color: #009f8b;
+}
+.choosegrid>div>p
+{
+    color:gray; 
+}
+.buysell
+{
+    width:100%;
+    height:90vh;
+    
+    position: absolute;
+    top:370vh;    
+}
+.gridbuysell
+{
+   display:grid;
+   grid-template-columns:50% 50%;
+   width:90%;
+   margin-top:15px;
+   margin-left:80px;   
+   column-gap: 70px;
+}
+.portfolio
+{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:460vh;
+    background-color: rgba(175,238,238,0.5);
+    
+}
+.gridportfolio
+{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    
+    width:90%;
+    margin-left:100px;   
+    column-gap:50px; 
+}
+.cryptocurrency
+{
+    width:100%;
+    height:150vh;
+    position: absolute;
+    top:560vh;
+    
+}
+.cryptobox
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+   
+    background-color: gray;
+    height:80px;
+    width:45%;
+    margin-top:5em; 
+    margin-left:380px; 
+
+}
+.gridbutton
+{
+    display:grid;
+    width:35%;
+    border:1px solid #009f8b;   
+    grid-template-columns:4fr 2fr;  
+    margin-left: 26em;
+    height:60px; 
+    border-radius:5px; 
+}
+.portfoliotimer
+{
+    width:100%;
+    background-image:linear-gradient(#009f8b,#009f5b);
+    position: absolute;
+    height:200px;
+    top:710vh;
+    
+    
+}
+.gridtimer
+{
+    display:grid;
+    width:90%; 
+    grid-template-columns:2fr 2fr 2fr 2fr;      
+    margin-left:150px;
+}
+.testimonial
+{
+    width:100%;
+    height:350px; 
+    position: absolute;
+    top:746.5vh;
+    
+}
+.gridtestimonial
+{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    margin-left: 3em;  
+}
+.question
+{
+    width:100%;
+    background-color: rgba(175,238,238,0.5);
+    position: absolute;
+    height:115vh;
+    top:810vh;   
+}
+.contact
+{
+    width:100%;
+    height:80vh;
+    position: absolute;
+    top:925vh;
+       
+}
+.gridcontact
+{
+    width:30%; 
+   display:grid;
+   grid-template-columns:1fr;
+   /* border:1px solid blue;    */
+   margin-left: 30em;
+}
+.footer
+{
+    width:100%;
+    position: absolute;
+    top:1005vh;
+    height:200px; 
+    border:1px solid blue;   
+}
+.gridfooter
+{
+    width:80%; 
+    display:grid;
+    margin-left: 10em;
+    
+    grid-template-columns:60% 50%;  
+     
+}
